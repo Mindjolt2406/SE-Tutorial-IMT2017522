@@ -37,7 +37,7 @@ int main()
   __;
   while(true)
   {
-    cout << "Press 1 for adding\nPress 2 for multiplying\nPress 3 for dividing\nPress 4 to exit\n";
+    cout << "Press 1 for adding\nPress 2 for multiplying\nPress 3 for dividing\nPress 4 for subtracting\nPress 5 to exit\n";
     int a;
     cin >> a;
     if(a==1)
@@ -68,7 +68,16 @@ int main()
       if(c==0) {cout << "You haven't given proper inputs" << endl; continue;}
       cout << b/c << endl;
     }
-    else if(a==4) break;
+    else if(a==4)
+    {
+      ld b,c;
+      cout << "Enter the first number : ";
+      cin >> b;
+      cout << "Enter the second number: ";
+      cin >> c;
+      cout << b - c << endl;
+    }
+    else if(a==5) break;
   }
   return 0;
 }
