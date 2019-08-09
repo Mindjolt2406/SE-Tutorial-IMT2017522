@@ -43,19 +43,28 @@ int main()
     if(a==1)
     {
       ld b,c;
-      cin >> b >> c;
+      cout << "Enter the first number : ";
+      cin >> b;
+      cout << "Enter the second number: ";
+      cin >> c;
       cout << b+c << endl;
     }
     else if(a==2)
     {
       ld b,c;
-      cin >> b >> c;
+      cout << "Enter the first number : ";
+      cin >> b;
+      cout << "Enter the second number: ";
+      cin >> c;
       cout << b*c << endl;
     }
     else if(a==3)
     {
       ld b,c;
-      cin >> b >> c;
+      cout << "Enter the first number : ";
+      cin >> b;
+      cout << "Enter the second number: ";
+      cin >> c;
       if(c==0) {cout << "You haven't given proper inputs" << endl; continue;}
       cout << b/c << endl;
     }
